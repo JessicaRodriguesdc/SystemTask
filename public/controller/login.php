@@ -1,9 +1,11 @@
 <?php
 
+session_start();
+
 include('../model/conexao.php');
 
 if(empty($_POST['email']) || empty($_POST['password'])) {
-	header('Location: ../../index.php');
+	header('Location: ../index.php');
 	exit();
 }
 
@@ -22,7 +24,7 @@ if($row == 1) {
 	exit();
 } else {
 	$_SESSION['nao_autenticado'] = true;
-	header('Location: ../../index.php');
+	header('Location: ../index.php');
 	exit();
 }
 ?>

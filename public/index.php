@@ -12,11 +12,10 @@
             <div class="login" align="center">
             <form action="controller/login.php" method="post">
                 <label>Usuário</label>
-                <input name="Email"  class="input is-large" type ="text" placeholder="Usuário" autofocus="" id="Email"><br><br>
+                <input type="email" id="email" name="email" placeholder="Usuario" required="" autocomplete="off"><br><br>
                 <label>Senha</label>
-                <input name="senha"  class="input is-large" type="password" placeholder="Senha" id="senha"><br><br>
-
-                <input value="enter" type="submit"  id="enter"class="" ><br><br>  
+                <input type="password" id="password" name="password" placeholder="Senha" required="" autocomplete="off"><br><br>
+                <input type="submit" name="button" value="Entrar">
             </form>       
         </div>
 	</body>	

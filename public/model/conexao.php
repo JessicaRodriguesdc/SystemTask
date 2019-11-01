@@ -3,7 +3,7 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$banco = "teste_bd";
+$banco = "crud_bd";
 
 $mysqli = new mysqli($host,$user,$pass,$banco);
 if($mysqli->connect_errno)
