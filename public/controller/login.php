@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-
 include('../model/conexao.php');
 
 if(empty($_POST['email']) || empty($_POST['password'])) {
@@ -19,8 +17,10 @@ $result = mysqli_query($mysqli, $query);
 $row = mysqli_num_rows($result);
 
 if($row == 1) {
-	$_SESSION['email'] = $user;
-	header('Location: ../view/home.php');
+	session_start();
+	$_SESSION['email'] = $_POST['email'];
+	$_SESSION['password'] = $_POST['password'];
+	header('Location: ../view/painel.php');
 	exit();
 } else {
 	$_SESSION['nao_autenticado'] = true;
