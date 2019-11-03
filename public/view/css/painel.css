@@ -23,6 +23,10 @@ footer {
     font-style: italic;
 }
 
+.menu {
+    width: 250px;
+}
+
 th {
     width: 150px;
 }

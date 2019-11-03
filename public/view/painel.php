@@ -1,5 +1,4 @@
 <?php
-include('../controller/verificacaoLogin.php');
 include('../controller/listaTarefas.php');
 ?>
 
@@ -12,13 +11,23 @@ include('../controller/listaTarefas.php');
         <script type="text/javascript" src="view/js/index.js"></script>
     </head>
         <body>
+            <table>
+                <tr>
+                    <th class="menu" scope="col">
+                    <?php
+                    include('../controller/verificacaoLogin.php');
+                    ?>
+                    </th>
+                    <th class="menu" scope="col"><a href="../controller/logout.php">Sair</a></th>   
+                </tr>
+            </table>
             <header>
-                <a href="../controller/logout.php">Sair</a>
                 <h2>Painel | Sistema de tarefas</h2>
             </header>
             <section>
                 <div id="login">
-                
+                    <button>Add</button>
+                    <hr>
                     <table>
                         <tr>
                             <th scope="col">Nome da Tarefa</th>
