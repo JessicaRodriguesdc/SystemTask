@@ -23,8 +23,14 @@ footer {
     font-style: italic;
 }
 
-.menu {
-    width: 250px;
+#menu {
+    background: rgb(211, 199, 177);
+    padding: 17px;
+}
+
+.menu_item {
+    color: white;
+    width: 100%;
 }
 
 th {
@@ -33,4 +39,21 @@ th {
 
 td {
     text-align: center;
+}
+
+#btn {
+    background: rgb(101, 172, 212);
+    color: white;
+    padding: 7px;
+    width: 80px;
+    border-radius: 7px;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
 }

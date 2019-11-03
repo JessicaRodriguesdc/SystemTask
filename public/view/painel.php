@@ -11,14 +11,14 @@ include('../controller/listaTarefas.php');
         <script type="text/javascript" src="view/js/index.js"></script>
     </head>
         <body>
-            <table>
+            <table id="menu">
                 <tr>
-                    <th class="menu" scope="col">
+                    <th class="menu_item">
                     <?php
                     include('../controller/verificacaoLogin.php');
                     ?>
                     </th>
-                    <th class="menu" scope="col"><a href="../controller/logout.php">Sair</a></th>   
+                    <th class="menu_item" ><a href="../controller/logout.php">Sair</a></th>   
                 </tr>
             </table>
             <header>
@@ -26,7 +26,7 @@ include('../controller/listaTarefas.php');
             </header>
             <section>
                 <div id="login">
-                    <button>Add</button>
+                    <button id="btn">Add</button>
                     <hr>
                     <table>
                         <tr>

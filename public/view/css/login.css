@@ -40,3 +40,20 @@ footer {
     text-align: center;
     font-style: italic;
 }
+
+#btn {
+    background: rgb(101, 172, 212);
+    color: white;
+    padding: 11px;
+    width: 80px;
+    border-radius: 7px;
+}
+
+a:link {
+    color: rgb(48, 64, 116);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(48, 64, 116);
+}

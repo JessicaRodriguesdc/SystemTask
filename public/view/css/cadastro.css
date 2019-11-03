@@ -39,7 +39,9 @@ form {
 }
 
 #btn {
-    border-radius: 10px;
-    padding: 8px;
-    width: 200px;
+    background: rgb(101, 172, 212);
+    color: white;
+    padding: 11px;
+    width: 100px;
+    border-radius: 7px;
 }

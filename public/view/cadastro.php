@@ -23,7 +23,7 @@
                     <input type="telefone" id="telefone" name="telefone" placeholder="Telefone" required="" autocomplete="off"><br><br>
                     <label>Senha:</label><br>
                     <input type="password" id="password" name="password" placeholder="Senha" required="" autocomplete="off"><br><br>
-                    <input type="submit" id="btn" name="button" value="Entrar"><br>
+                    <input type="submit" id="btn" name="button" value="Cadastrar-se"><br>
                 </form>       
             </section>
             <footer>
