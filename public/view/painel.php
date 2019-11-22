@@ -13,7 +13,7 @@ include('../controller/listaTarefas.php');
     </head>
         <body>
             <header>
-                <a href="../controller/logout.php">Sair</a>
+                <a  id="sair" href="../controller/logout.php">Sair</a>
                 <h2>Painel | Sistema de tarefas</h2>
             </header>
             <section>
@@ -39,7 +39,7 @@ include('../controller/listaTarefas.php');
                     </table>
             </section>
             <footer>
-                <p>&copy;jessicarodrigues</p>
+                <p>&copy;JéssicaRodrigues</p>
             </footer> 
 	</body>	
 </html>
