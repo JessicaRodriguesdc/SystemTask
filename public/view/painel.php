@@ -1,5 +1,6 @@
 <?php
 include('../controller/listaTarefas.php');
+include('../controller/verificacaoLogin.php');
 ?>
 
 <!DOCTYPE html>
@@ -11,18 +12,11 @@ include('../controller/listaTarefas.php');
         <script type="text/javascript" src="view/js/index.js"></script>
     </head>
         <body>
-            <table id="menu">
-                <tr>
-                    <th class="menu_item">
-                    <?php
-                    include('../controller/verificacaoLogin.php');
-                    ?>
-                    </th>
-                    <th class="menu_item" ><a href="../controller/logout.php">Sair</a></th>   
-                </tr>
-            </table>
             <header>
-                <h2>Painel | Sistema de tarefas</h2>
+
+                <a  id="sair" href="../controller/logout.php">Sair</a>
+                
+            <h2>Painel | Sistema de tarefas</h2>
             </header>
             <section>
                 <div id="login">
@@ -48,7 +42,7 @@ include('../controller/listaTarefas.php');
                     </table>
             </section>
             <footer>
-                <p>&copy;jessicarodrigues</p>
+                <p>&copy;JéssicaRodrigues</p>
             </footer> 
 	</body>	
 </html>

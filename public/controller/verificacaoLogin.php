@@ -5,6 +5,6 @@ include('../model/conexao.php');
         header("Location: ../login.php");
         exit;
     }else{
-        echo"<center>Ola! ".$_SESSION["email"]."</center>";
+        echo"<br><br><center> Seja bem vind@ ".$_SESSION["email"]."</center><br>";
     }
 ?>

@@ -10,10 +10,12 @@
 	</head>
         <body>
             <header>
+                <br>
                 <h1>Sistema de Tarefas</h1>
             </header>
             <section>
                 <form action="controller/login.php" method="post">
+                <br>
                     <label>Usuário:</label><br>
                     <input type="email" id="email" name="email" placeholder="Usuario" required="" autocomplete="off"><br><br>
                     <label>Senha:</label><br>
@@ -24,7 +26,7 @@
                 </form>       
             </section>
             <footer>
-                <p>&copy;jessicarodrigues</p>
+                <p>&copy;JéssicaRodrigues</p>
             </footer>          
         </body>	
 </html>
