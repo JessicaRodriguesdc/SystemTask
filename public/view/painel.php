@@ -17,9 +17,7 @@ include('../controller/verificacaoLogin.php');
                 <h2>Painel | Sistema de tarefas</h2>
                 <button id="btn-novo">Novo</button>
             </header>           
-            <section>
-                <div id="login">
-                
+            <section>                
                     <hr>
                 <div id="login">    
 
@@ -28,16 +26,20 @@ include('../controller/verificacaoLogin.php');
                             <th scope="col">Nome da Tarefa</th>
                             <th scope="col">Status</th>
                             <th scope="col">Data Inicial</th>
-                            <th scope="col">Data Final</th>
-                            <th scope="col">Excluir</th>
-                            <th scope="col">Editar</th>     
+                            <th scope="col">Data Final</th>                 
+                            <th scope="col">Editar</th>
+                            <th scope="col">Excluir</th>     
                         </tr>
                         <?php while($dado = $prod->fetch_array()){?>
                         <tr>
                             <td><?php echo $dado['nomeTarefa'];?></td>
                             <td><?php echo $dado['status'];?></td>
                             <td><?php echo $dado['dataInicil'];?></td>
-                            <td><?php echo $dado['dataTermino'];?></td>          
+                            <td><?php echo $dado['dataTermino'];?></td>
+                            
+                            <?php 
+								echo "<td><a href='../controller/deletarRegistro.php?id=".$dado['id']."'>Excluir</a></td>";
+							?> 
                         </tr>
                         <?php }?>
                     </table>
