@@ -32,7 +32,13 @@ form {
 #btn {
     border-radius: 10px;
     padding: 8px;
-    width: 200px;
+    width: 100px;
+    color: white;
+    background-color: rgb(73, 166, 219);
+}
+
+a:link {
+    text-decoration: none;
 }
 
 footer {

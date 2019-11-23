@@ -17,6 +17,14 @@ section {
     box-shadow: 5px 5px 10px rgba(95, 93, 93, 0);
 }
 
+#btn-novo {
+    border-radius: 20px;
+    padding: 15px;
+    width: 70px;
+    background: rgb(211, 199, 177);
+    margin-left: 53%;
+}
+
 footer {
     color: white;
     text-align: center;
@@ -41,19 +49,18 @@ td {
     text-align: center;
 }
 
-#btn {
-    background: rgb(101, 172, 212);
-    color: white;
-    padding: 7px;
-    width: 80px;
-    border-radius: 7px;
-}
-
 a:link {
-    color: white;
+    color: rgb(19, 18, 18);
     text-decoration: none;
 }
 
 a:visited {
-    color: white;
+    color: rgb(19, 18, 18);
+}
+
+#btn-link {
+    border-radius: 100px;
+    padding: 20px;
+    width: 65px;
+    background-color: white;
 }
