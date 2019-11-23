@@ -13,12 +13,12 @@ include('../controller/listaTarefas.php');
     </head>
         <body>
             <header>
-                <a  id="sair" href="../controller/logout.php">Sair</a>
+                <button id="btn-link"> <a href="../controller/logout.php">Sair</a> </button>
                 <h2>Painel | Sistema de tarefas</h2>
             </header>
+            <button id="btn-novo">Novo</button>
             <section>
-                <div id="login">
-                
+                <div id="login">    
                     <table>
                         <tr>
                             <th scope="col">Nome da Tarefa</th>
