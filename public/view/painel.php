@@ -1,6 +1,5 @@
 <?php
 include('../controller/listaTarefas.php');
-include('../controller/verificacaoLogin.php');
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +12,11 @@ include('../controller/verificacaoLogin.php');
     </head>
         <body>
             <header>
-                <button id="btn-link"> <a href="../controller/logout.php">Sair</a> </button>
+                <?php
+                    include('../controller/verificacaoLogin.php');
+                ?>
+                <button id="btn-link"><a href="../controller/logout.php">Sair</a> </button>
+                <hr>
                 <h2>Painel | Sistema de tarefas</h2>
                 <button id="btn-novo">Novo</button>
             </header>           
@@ -36,16 +39,16 @@ include('../controller/verificacaoLogin.php');
                             <td><?php echo $dado['status'];?></td>
                             <td><?php echo $dado['dataInicil'];?></td>
                             <td><?php echo $dado['dataTermino'];?></td>
-                            
+                            <td></td>
                             <?php 
-								echo "<td><a href='../controller/deletarRegistro.php?id=".$dado['id']."'>Excluir</a></td>";
+								echo "<td><a href='../controller/deletarRegistro.php?id=".$dado['id']."'>X</a></td>";
 							?> 
                         </tr>
                         <?php }?>
                     </table>
             </section>
             <footer>
-                <p>&copy;JéssicaRodrigues</p>
+                <p>&copy;Jéssica Rodrigues da Costa</p>
             </footer> 
 	</body>	
 </html>

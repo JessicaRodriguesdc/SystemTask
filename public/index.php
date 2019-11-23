@@ -26,7 +26,7 @@
                 </form>       
             </section>
             <footer>
-                <p>&copy;JéssicaRodrigues</p>
+            <p>&copy;Jéssica Rodrigues da Costa</p>
             </footer>          
         </body>	
 </html>
