@@ -12,12 +12,14 @@ include('../controller/listaTarefas.php');
     </head>
         <body>
             <header>
-                <?php
-                    include('../controller/verificacaoLogin.php');
-                ?>
-                <button id="btn-link"><a href="../controller/logout.php">Sair</a> </button>
+                <div id="topo">
+                    <?php
+                        include('../controller/verificacaoLogin.php');
+                    ?>
+                    <button id="btn-link"><a href="../controller/logout.php">Sair</a> </button>
+                </div>
                 <hr>
-                <h2>Painel | Sistema de tarefas</h2>
+                <h2>--Painel | Sistema de tarefas--</h2>
                 <button id="btn-novo">Novo</button>
             </header>           
             <section>                

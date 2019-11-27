@@ -1,6 +1,6 @@
 body {
     background: rgb(73, 166, 219);
-    font: normal 18pt arial;
+    font: normal 15pt arial;
 }
 
 header {
@@ -49,18 +49,28 @@ td {
     text-align: center;
 }
 
+#topo {
+    background: rgb(211, 199, 177);
+    color: rgb(68, 7, 148);
+    font: normal 18pt arial;
+    position: relative;
+    padding-top: 2%;
+    padding-left: 68%;
+    padding-bottom: 2%;
+}
+
 a:link {
-    color: rgb(19, 18, 18);
+    color: white;
     text-decoration: none;
 }
 
 a:visited {
-    color: rgb(19, 18, 18);
+    color: white;
 }
 
 #btn-link {
-    border-radius: 50px;
     padding: 10px;
     width: 65px;
-    background-color: white;
+    color: white;
+    background-color: rgb(68, 7, 148);
 }

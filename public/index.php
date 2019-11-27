@@ -11,7 +11,7 @@
         <body>
             <header>
                 <br>
-                <h1>Sistema de Tarefas</h1>
+                <h1>--Sistema de Tarefas--</h1>
             </header>
             <section>
                 <form action="controller/login.php" method="post">
