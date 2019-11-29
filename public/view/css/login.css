@@ -9,12 +9,13 @@ header {
 }
 
 section {
-    background: rgb(194, 188, 178);
+    background: rgb(61, 138, 201);
     border-radius: 10px;
     padding: 15px;
+    color: white;
     width: 500px;
     margin: auto;
-    box-shadow: 5px 5px 10px rgba(95, 93, 93, 0);
+    box-shadow: 5px 5px 10px rgba(17, 16, 16, 0);
 }
 
 form {

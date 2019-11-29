@@ -11,11 +11,12 @@
         <body>
             <header>
                 <br>
-                <h1>--Sistema de Tarefas--</h1>
+                <h1>Sistema de Tarefas</h1>
             </header>
             <section>
                 <form action="controller/login.php" method="post">
                 <br>
+                <h2><center>Login</center></h2>
                     <label>Usuário:</label><br>
                     <input type="email" id="email" name="email" placeholder="Usuario" required="" autocomplete="off"><br><br>
                     <label>Senha:</label><br>
