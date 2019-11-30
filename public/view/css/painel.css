@@ -17,10 +17,12 @@ section {
 }
 
 #btn-novo {
-    padding: 15px;
+    padding: 14px;
     width: 70px;
     background: rgb(211, 199, 177);
     margin-left: 53%;
+    font: normal 13pt arial;
+    text-align: center;
 }
 
 footer {
@@ -73,4 +75,6 @@ a:visited {
     width: 65px;
     color: white;
     background: rgba(109, 113, 122, 0.966);
+    font: normal 13pt arial;
+    text-align: center;
 }
