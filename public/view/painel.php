@@ -16,16 +16,13 @@ include('../controller/listaTarefas.php');
                     <?php
                         include('../controller/verificacaoLogin.php');
                     ?>
-                    <button id="btn-link"><a href="../controller/logout.php">Sair</a> </button>
+                    <button id="btn-sair"><a href="../controller/logout.php">Sair</a> </button>
                 </div>
-                <hr>
-                <h2>--Painel | Sistema de tarefas--</h2>
+                <h2>Painel | Sistema de tarefas</h2>
                 <button id="btn-novo">Novo</button>
             </header>           
             <section>                
-                    <hr>
-                <div id="login">    
-
+                <div id="tabelaTarefas">    
                     <table>
                         <tr>
                             <th scope="col">Nome da Tarefa</th>

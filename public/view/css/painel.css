@@ -1,6 +1,6 @@
 body {
     background: rgb(73, 166, 219);
-    font: normal 15pt arial;
+    font: normal 14pt arial;
 }
 
 header {
@@ -10,15 +10,13 @@ header {
 
 section {
     background: rgb(211, 199, 177);
-    border-radius: 10px;
     padding: 15px;
     width: 750px;
     margin: auto;
-    box-shadow: 5px 5px 10px rgba(95, 93, 93, 0);
+    box-shadow: 5px 5px 10px rgba(43, 42, 42, 0);
 }
 
 #btn-novo {
-    border-radius: 20px;
     padding: 15px;
     width: 70px;
     background: rgb(211, 199, 177);
@@ -42,7 +40,9 @@ footer {
 }
 
 th {
+    color: white;
     width: 150px;
+    background: rgba(109, 113, 122, 0.966);
 }
 
 td {
@@ -51,7 +51,7 @@ td {
 
 #topo {
     background: rgb(211, 199, 177);
-    color: rgb(68, 7, 148);
+    color: black;
     font: normal 18pt arial;
     position: relative;
     padding-top: 2%;
@@ -68,9 +68,9 @@ a:visited {
     color: white;
 }
 
-#btn-link {
+#btn-sair {
     padding: 10px;
     width: 65px;
     color: white;
-    background-color: rgb(68, 7, 148);
+    background: rgba(109, 113, 122, 0.966);
 }
