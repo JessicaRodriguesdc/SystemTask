@@ -3,10 +3,10 @@
 <html>
 	<head>
 		<title>Sistema de tarefas</title>
-        <meta charset="utf-8">       
-        <meta name="author" content="Jéssica Rodrigues"/>
-        <link rel="stylesheet" href="view/css/login.css">
-        <script type="text/javascript" src="view/js/index.js"></script>
+		<meta charset="utf-8">       
+		<meta name="author" content="Jéssica Rodrigues"/>
+		<link rel="stylesheet" href="view/css/login.css">
+		<script type="text/javascript" src="view/js/index.js"></script>
 	</head>
         <body>
             <header>
