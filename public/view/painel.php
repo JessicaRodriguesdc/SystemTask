@@ -6,10 +6,10 @@ include('../controller/listaTarefas.php');
 <html>
 	<head>
 		<title>Painel</title>
-        <meta charset="utf-8">       
-        <link rel="stylesheet" type="text/css" href="css/painel.css">
-        <script type="text/javascript" src="view/js/index.js"></script>
-    </head>
+		<meta charset="utf-8">       
+		<link rel="stylesheet" type="text/css" href="css/painel.css">
+		<script type="text/javascript" src="view/js/index.js"></script>
+    	</head>
         <body>
             <header>
                 <div id="topo">
@@ -40,8 +40,8 @@ include('../controller/listaTarefas.php');
                             <td><?php echo $dado['dataTermino'];?></td>
                             <td></td>
                             <?php 
-								echo "<td><a href='../controller/deletarRegistro.php?id=".$dado['id']."'>X</a></td>";
-							?> 
+				echo "<td><a href='../controller/deletarRegistro.php?id=".$dado['id']."'>X</a></td>";
+			    ?> 
                         </tr>
                         <?php }?>
                     </table>
