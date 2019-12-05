@@ -3,9 +3,9 @@
 <html>
 	<head>
 		<title>Sistema de tarefas</title>
-        <meta charset="utf-8">       
-        <link rel="stylesheet" type="text/css" href="css/cadastro.css">
-        <script type="text/javascript" src="view/js/index.js"></script>
+		<meta charset="utf-8">       
+		<link rel="stylesheet" type="text/css" href="css/cadastro.css">
+		<script type="text/javascript" src="view/js/index.js"></script>
 	</head>
         <body>
             <header>
