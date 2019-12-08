@@ -17,18 +17,16 @@ if($_POST){
 
     if(!mysqli_query($mysqli,$sql)){
         echo "<script>
-                window.alert('não cadastrado')
+                window.alert('Usuario não foi cadastrado')
             </script>";
         header('refresh:0; url=../view/cadastro.php');
     }
     else{
         echo "<script>
-                window.alert('cadastrado')
+                window.alert('Usuario cadastrado')
             </script>";
 
         header('refresh:0; url=../index.php');
     }
-
-    
 }
 ?>

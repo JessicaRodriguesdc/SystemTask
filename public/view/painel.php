@@ -5,12 +5,12 @@ include('../controller/listaTarefas.php');
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Painel</title>
-		<meta charset="utf-8">       
-		<link rel="stylesheet" type="text/css" href="css/painel.css">
-		<script type="text/javascript" src="view/js/index.js"></script>
-    	</head>
-        <body>
+        <title>Painel</title>
+        <meta charset="utf-8">       
+        <link rel="stylesheet" type="text/css" href="css/painel.css">
+        <script type="text/javascript" src="view/js/index.js"></script>
+    </head>
+    <body>
             <header>
                 <div id="topo">
                     <?php

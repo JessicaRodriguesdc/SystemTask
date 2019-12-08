@@ -22,7 +22,6 @@
                     <label>Senha:</label><br>
                     <input type="password" id="password" name="password" placeholder="Senha" required="" autocomplete="off"><br><br>
                     <input type="submit" id="btn" name="button" value="Entrar"><br><br>
-
                     <a href="view/cadastro.php">Cadastre-se</a>
                 </form>       
             </section>
