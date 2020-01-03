@@ -16,17 +16,7 @@ section {
     box-shadow: 5px 5px 10px rgba(43, 42, 42, 0);
 }
 
-#btn-novo {
-    padding: 14px;
-    width: 70px;
-    background: rgb(211, 199, 177);
-    margin-left: 53%;
-    font: normal 13pt arial;
-    text-align: center;
-}
-
 footer {
-    color: white;
     text-align: center;
     font-style: italic;
 }
@@ -37,7 +27,6 @@ footer {
 }
 
 .menu_item {
-    color: white;
     width: 100%;
 }
 
