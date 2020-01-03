@@ -1,10 +1,4 @@
-body {
-    background: rgb(73, 166, 219);
-    font: normal 14pt arial;
-}
-
 header {
-    color: white;
     text-align: center;
 }
 
@@ -40,30 +34,12 @@ td {
     text-align: center;
 }
 
-#topo {
-    background: rgb(211, 199, 177);
-    color: black;
-    font: normal 18pt arial;
-    position: relative;
-    padding-top: 2%;
-    padding-left: 68%;
-    padding-bottom: 2%;
-}
-
 a:link {
-    color: white;
+    color: rgb(98, 148, 240);
     text-decoration: none;
 }
 
-a:visited {
+a:hover{
     color: white;
-}
-
-#btn-sair {
-    padding: 10px;
-    width: 65px;
-    color: white;
-    background: rgba(109, 113, 122, 0.966);
-    font: normal 13pt arial;
-    text-align: center;
+    text-decoration: none;
 }
