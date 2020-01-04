@@ -32,7 +32,7 @@ include('../controller/listaTarefas.php');
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     
-                 <a href="../controller/logout.php"><button class="btn btn-outline-danger my-2 my-lg-0">Sair</button></a> 
+                <button class="btn btn-outline-danger my-2 my-lg-0"><a href="../controller/logout.php">Sair</a> </button>
                 </form>
             </div>
         </nav>
@@ -73,21 +73,21 @@ include('../controller/listaTarefas.php');
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Novo Registro</h5><!--titulo do modal-->
+                            <h5 class="modal-title" id="exampleModalLabel">Adicionar Tarefa</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <form action="../controller/novoRegistroEstoque.php" method="post">  
-                            <div class="modal-body" id="mynome"><!--criar tabela de estoque-->
+                            <div class="modal-body" id="mynome">
                                 <tr>
-                                    <th><input type="text" id="nome" name="nome" placeholder="Nome" autocomplete="off"></th>
-                                    <th><input type="namber" id="quant" name="quant" placeholder="Quantidade" autocomplete="off"></th>
+                                    <th><input type="text" id="nomeTarefa" name="nomeTarefa" placeholder="Nome da Tarefa" autocomplete="off"></th><br><br>
+                                    <th><input type="text" id="status" name="status" placeholder="Status" autocomplete="off"></th><br><br>
+                                    <th><input type="date" id="dataI" name="dataI" placeholder="Data Inicial" autocomplete="off"></th>
+                                    <th><input type="date" id="dataF" name="dataF" placeholder="Data Final" autocomplete="off"></th>
                                 </tr>
                             </div>
                             <div class="modal-footer">
-                                <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>-->
-                                <!--<button type="submit" class="btn btn-primary">Salvar</button>-->
                                 <input type="submit" class="btn btn-primary" value="Salvar">
                             </div>
                         </form>
