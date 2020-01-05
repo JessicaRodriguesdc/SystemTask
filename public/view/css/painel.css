@@ -3,42 +3,42 @@ header {
 }
 
 section {
-    background: rgb(211, 199, 177);
+    background: rgb(118, 188, 253);
     padding: 15px;
-    width: 750px;
+    width: 740px;
     margin: auto;
-    box-shadow: 5px 5px 10px rgba(43, 42, 42, 0);
 }
+
+th {
+    padding-left: 20px;
+    color: white;
+    width: 140px;
+    background: black;
+}
+
+td {
+    padding-left: 20px;
+}
+
 footer {
     text-align: center;
     font-style: italic;
 }
 
-#menu {
-    background: rgb(211, 199, 177);
-    padding: 17px;
-}
-
-.menu_item {
-    width: 100%;
-}
-
-th {
-    color: white;
-    width: 150px;
-    background: rgba(109, 113, 122, 0.966);
-}
-
-td {
-    text-align: center;
-}
-
 a:link {
-    color: rgb(98, 148, 240);
+    color: white;
     text-decoration: none;
 }
 
 a:hover{
     color: white;
     text-decoration: none;
+}
+
+#btn-sair{
+    color: white;
+}
+
+#btn-novo{
+
 }

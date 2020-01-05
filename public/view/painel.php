@@ -16,15 +16,15 @@ include('../controller/listaTarefas.php');
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar navbar-light"  style="background-color: rgb(211, 199, 177);">
-            <a class="navbar-brand" href="#">Navbar</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a  style="color: white" class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li  style="color: white" class="nav-item active">
                     <?php
                         include('../controller/verificacaoLogin.php');
                     ?>
@@ -32,13 +32,13 @@ include('../controller/listaTarefas.php');
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     
-                <button class="btn btn-outline-danger my-2 my-lg-0"><a href="../controller/logout.php">Sair</a> </button>
+                <button class="btn btn-outline-primary my-2 my-lg-0"><a href="../controller/logout.php" id="btn-sair">Sair</a> </button>
                 </form>
             </div>
         </nav>
             <header>     
                 <h2>Painel | Sistema de tarefas</h2>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                <button id="btn-novo" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
 					Criar Registro
 				</button>
             </header>
