@@ -21,7 +21,8 @@
             <section>
                 <form action="controller/login.php" method="post">
                 <br>
-                <h2><center>Login</center></h2>
+                <h2>Login</h2>
+                <br>
                     <input type="email" id="email" name="email" placeholder="Usuario" required="" autocomplete="off"><br><br>
                     <input type="password" id="password" name="password" placeholder="Senha" required="" autocomplete="off"><br><br>
                     <input type="submit" id="btn" name="button" class="btn btn-primary" value="Entrar"><br><br>

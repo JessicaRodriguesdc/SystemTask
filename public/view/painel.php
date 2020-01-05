@@ -17,7 +17,7 @@ include('../controller/listaTarefas.php');
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a  style="color: white" class="navbar-brand" href="#">Navbar</a>
+            <a  style="color: white" class="navbar-brand">S.T</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -30,19 +30,21 @@ include('../controller/listaTarefas.php');
                     ?>
                 </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    
+                <form class="form-inline my-2 my-lg-0">       
                 <button class="btn btn-outline-primary my-2 my-lg-0"><a href="../controller/logout.php" id="btn-sair">Sair</a> </button>
                 </form>
             </div>
         </nav>
-            <header>     
+            <header>
+                <br>     
                 <h2>Painel | Sistema de tarefas</h2>
+                <hr>
+                <br>
                 <button id="btn-novo" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
 					Criar Registro
 				</button>
             </header>
-
+            <br>
             <section>                
                 <div id="tabelaTarefas">    
                     <table>

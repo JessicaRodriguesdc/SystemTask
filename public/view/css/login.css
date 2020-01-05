@@ -1,5 +1,5 @@
 header {
-    color: white;
+    color: black;
     text-align: center;
 }
 
@@ -10,7 +10,6 @@ section {
     color: white;
     width: 500px;
     margin: auto;
-    box-shadow: 5px 5px 10px rgba(17, 16, 16, 0);
 }
 
 form {
@@ -32,12 +31,6 @@ a:link {
 footer {
     text-align: center;
     font-style: italic;
-}
-
-#btn {
-    color: white;
-    padding: 11px;
-    width: 80px;
 }
 
 a:link {
