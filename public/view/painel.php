@@ -86,11 +86,11 @@ include('../controller/listaTarefas.php');
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <form action="../controller/novoRegistroEstoque.php" method="post">  
+                        <form action="../controller/novoRegistro.php" method="post">  
                             <div class="modal-body" id="mynome">
                                 <tr>
                                     <th>
-                                        <label for="status">Nome da Tarefa: </label><br>
+                                        <label for="nome:Tarefa">Nome da Tarefa: </label><br>
                                         <input type="text" id="nomeTarefa" name="nomeTarefa" placeholder="Nome da Tarefa" autocomplete="off">
                                     </th><br>
                                     <hr>
