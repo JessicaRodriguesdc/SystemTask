@@ -7,17 +7,7 @@ section {
     padding: 15px;
     width: 790px;
     margin: auto;
-}
-
-th {
-    padding-left: 20px;
-    color: white;
-    width: 130px;
-    background: black;
-}
-
-td {
-    
+    border-radius: 10px;
 }
 
 footer {
@@ -38,7 +28,36 @@ a:hover{
 #btn-sair{
     color: white;
 }
-#NotUser,
+
+
+#Tstatus,
+#Tinicio,
+#Ttermino
+{
+    padding: 10px;
+    padding-left: 20px;
+    color: white;
+    width: 120px;
+    background: black;
+}
+
+#TnomeTarefa{
+    padding: 10px;
+    padding-left: 20px;
+    color: white;
+    width: 190px;
+    background: black;   
+}
+
+#Teditar,
+#Texcluir{
+    padding: 10px;
+    padding-left: 20px;
+    color: white;
+    width: 100px;
+    background: black;
+}
+
 #nomeTarefa,
 #status,
 #inicio,
@@ -53,3 +72,5 @@ a:hover{
 #excluir{
     padding-left: 30px;
 }
+
+#NotUser { visibility: collapse }

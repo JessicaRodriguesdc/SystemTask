@@ -49,13 +49,13 @@ include('../controller/listaTarefas.php');
                 <div id="tabelaTarefas">    
                     <table>
                         <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Nome da Tarefa</th>
-                            <th scope="col">Status</th>
-                            <th scope="col">Data Inicial</th>
-                            <th scope="col">Data Final</th>                 
-                            <th scope="col">Editar</th>
-                            <th scope="col">Excluir</th>     
+                            <th scope="col" id="NotUser">#</th>
+                            <th scope="col" id="TnomeTarefa">Nome da Tarefa</th>
+                            <th scope="col" id="Tstatus">Status</th>
+                            <th scope="col" id="Tinicio">Data Inicial</th>
+                            <th scope="col" id="Ttermino">Data Final</th>                 
+                            <th scope="col" id="Teditar">Editar</th>
+                            <th scope="col" id='Texcluir'>Excluir</th>     
                         </tr>
                         <?php while($dado = $prod->fetch_array()){?>
                         <tr>
@@ -132,11 +132,11 @@ include('../controller/listaTarefas.php');
 														<span aria-hidden="true">&times;</span>
 													</button>
 												</div>
-												<form action="../controller/editarRegistroEstoque.php" method="post">  
+												<form action="../controller/editarRegistro.php" method="post">  
 														<div class="modal-body">
 															<input type="hidden" name="id" id="edi_id">
 															<p>Editar Nome da Tarefa: </p>
-                                                            <p><input type="text" name="nome" id="edi_nome"></p>
+                                                            <p><input type="text" name="nomeTarefa" id="edi_nome"></p>
                                                             <hr>
 															<p>Editar Status da Tarefa:</p>
 															<p><select name="status" id="edi_status">                            
