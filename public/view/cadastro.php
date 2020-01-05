@@ -13,26 +13,25 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	</head>
         <body>
-            <header>
-                <h2>Cadastro</h2>
+            <header>     
+                <br>
+                    <h1>Sistema de Tarefas</h1>    
             </header>
             <section>
                 <form action="../controller/cadastrar.php" method="post">
-                    <label>Nome:</label><br>
+                    <br>
+                    <h2>Cadastro</h2>
+                    <br>
                     <input type="nome" id="nome" name="nome" placeholder="Usuario" required="" autocomplete="off"><br><br>
-                    <label>Email:</label><br>
                     <input type="email" id="email" name="email" placeholder="Email" required="" autocomplete="off"><br><br>
-                    <label>Cpf:</label><br>
                     <input type="cpf" id="cpf" name="cpf" placeholder="Cpf" required="" autocomplete="off"><br><br>
-                    <label>Telefone:</label><br>
                     <input type="telefone" id="telefone" name="telefone" placeholder="Telefone" required="" autocomplete="off"><br><br>
-                    <label>Senha:</label><br>
                     <input type="password" id="password" name="password" placeholder="Senha" required="" autocomplete="off"><br><br>
-                    <input type="submit" id="btn" name="button" value="Cadastrar-se"><br>
+                    <input type="submit" id="btn" name="button" value="Cadastrar-se" class="btn btn-primary"><br>
                 </form>       
             </section>
             <footer>
-                <p>&copy;jessicarodrigues</p>
+            <p>&copy;Jéssica Rodrigues da Costa</p>
             </footer> 
 	</body>	
 </html>
