@@ -40,7 +40,7 @@ include('../controller/listaTarefas.php');
                 <h2>Painel | Sistema de tarefas</h2>
                 <hr>
                 <br>
-                <button id="btn-novo" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                <button id="btn-novo" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalNovo">
 					Criar Registro
 				</button>
             </header>
@@ -49,6 +49,7 @@ include('../controller/listaTarefas.php');
                 <div id="tabelaTarefas">    
                     <table>
                         <tr>
+                            <th scope="col">#</th>
                             <th scope="col">Nome da Tarefa</th>
                             <th scope="col">Status</th>
                             <th scope="col">Data Inicial</th>
@@ -58,20 +59,25 @@ include('../controller/listaTarefas.php');
                         </tr>
                         <?php while($dado = $prod->fetch_array()){?>
                         <tr>
-                            <td><?php echo $dado['nomeTarefa'];?></td>
-                            <td><?php echo $dado['status'];?></td>
-                            <td><?php echo $dado['dataInicil'];?></td>
-                            <td><?php echo $dado['dataTermino'];?></td>
-                            <td></td>
-                            <?php 
-				echo "<td><a href='../controller/deletarRegistro.php?id=".$dado['id']."'>X</a></td>";
-			    ?> 
+                            <td id="NotUser"><?php echo $dado['id'];?></td>	
+                            <td id="nomeTarefa"><?php echo $dado['nomeTarefa'];?></td>
+                            <td id="status"><?php echo $dado['status'];?></td>
+                            <td id="inicio"><?php echo $dado['dataInicio'];?></td>
+                            <td id="termino"><?php echo $dado['dataTermino'];?></td>
+                            <td id="editar">
+                                <button type ="button" class="btn editarbtn" >
+                                    <img src="img/editar.ico">
+                                </button>
+                            </td>
+                        <?php 
+                            echo "<td id='excluir'><a href='../controller/deletarRegistro.php?id=".$dado['id']."'><img src='img/excluir.ico'></a></td>";
+                        ?> 
                         </tr>
                         <?php }?>
                     </table>
             </section>
 
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="modalNovo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -83,10 +89,29 @@ include('../controller/listaTarefas.php');
                         <form action="../controller/novoRegistroEstoque.php" method="post">  
                             <div class="modal-body" id="mynome">
                                 <tr>
-                                    <th><input type="text" id="nomeTarefa" name="nomeTarefa" placeholder="Nome da Tarefa" autocomplete="off"></th><br><br>
-                                    <th><input type="text" id="status" name="status" placeholder="Status" autocomplete="off"></th><br><br>
-                                    <th><input type="date" id="dataI" name="dataI" placeholder="Data Inicial" autocomplete="off"></th>
-                                    <th><input type="date" id="dataF" name="dataF" placeholder="Data Final" autocomplete="off"></th>
+                                    <th>
+                                        <label for="status">Nome da Tarefa: </label><br>
+                                        <input type="text" id="nomeTarefa" name="nomeTarefa" placeholder="Nome da Tarefa" autocomplete="off">
+                                    </th><br>
+                                    <hr>
+                                    <th>
+                                        <label for="status">Status da Tarefa: </label><br>
+                                        <select name="status" id="status">
+												<option value="Iniciado">Iniciado</option> 
+												<option value="Parado">Parado</option>
+												<option value="Finalizado">Finalizado</option>
+                                        </select>
+                                    </th><br>
+                                    <hr>
+                                        <p><label for="periodo">Periodo:</label></p>
+                                    <th>
+                                        <label for="dataI">Inicio: </label>
+                                        <input type="date" id="dataI" name="dataI" placeholder="Data Inicial" autocomplete="off">
+                                    </th>
+                                    <th>
+                                        <label for="dataF">Termino: </label>
+                                        <input type="date" id="dataF" name="dataF" placeholder="Data Final" autocomplete="off">
+                                    </th>
                                 </tr>
                             </div>
                             <div class="modal-footer">
@@ -96,6 +121,67 @@ include('../controller/listaTarefas.php');
                     </div>
                 </div>
             </div>
+
+            	<!--modal de editar-->
+							<div class="modal fade" tabindex="-1" role="dialog" id="editarmodal">		  
+										<div class="modal-dialog" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h5 class="modal-title">Editar Tarefa</h5>
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<form action="../controller/editarRegistroEstoque.php" method="post">  
+														<div class="modal-body">
+															<input type="hidden" name="id" id="edi_id">
+															<p>Editar Nome da Tarefa: </p>
+                                                            <p><input type="text" name="nome" id="edi_nome"></p>
+                                                            <hr>
+															<p>Editar Status da Tarefa:</p>
+															<p><select name="status" id="edi_status">                            
+                                                                <option value="Iniciado">Iniciado</option> 
+                                                                <option value="Parado">Parado</option>
+                                                                <option value="Finalizado">Finalizado</option>
+															</select></p>
+															<hr>
+															<p>Editar Periodo: </p>
+															<label for="dataI">Inicio: </label>
+                                                            <input type="date" id="edi_dataI" name="dataI" placeholder="Data Inicial" autocomplete="off">
+                                                            <label for="dataF">Termino: </label>
+                                                            <input type="date" id="edi_dataF" name="dataF" placeholder="Data Final" autocomplete="off">
+                                    
+														</div>
+														<div class="modal-footer">
+														<input type="submit" class="btn btn-primary" value="Salvar">
+														</div>
+												</form>
+											</div>
+										</div>	
+								</div>
+							<!--final do modal-->		
+		<!--my js-->
+		<script>
+			$(document).ready(function(){
+				$('.editarbtn').on('click',function(){
+					$('#editarmodal').modal('show');
+						$tr = $(this).closest('tr');
+
+						var data= $tr.children("td").map(function(){
+							return $(this).text();
+						}).get();
+
+						console.log(data);
+						
+						$('#edi_id').val(data[0]);
+						$('#edi_nome').val(data[1]);
+                        $('#edi_status').val(data[2]);
+						$('#edi_dataI').val(data[3]);
+						$('#edi_dataF').val(data[4]);
+				});
+			});
+
+		</script>
 
             <footer>
                 <p>&copy;Jéssica Rodrigues da Costa</p>

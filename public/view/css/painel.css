@@ -5,19 +5,19 @@ header {
 section {
     background: rgb(118, 188, 253);
     padding: 15px;
-    width: 740px;
+    width: 790px;
     margin: auto;
 }
 
 th {
     padding-left: 20px;
     color: white;
-    width: 140px;
+    width: 130px;
     background: black;
 }
 
 td {
-    padding-left: 20px;
+    
 }
 
 footer {
@@ -38,7 +38,18 @@ a:hover{
 #btn-sair{
     color: white;
 }
+#NotUser,
+#nomeTarefa,
+#status,
+#inicio,
+#termino{
+    padding-left: 20px;
+}
 
-#btn-novo{
+#editar{
+    padding-left: 10px;
+}
 
+#excluir{
+    padding-left: 30px;
 }
