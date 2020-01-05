@@ -22,9 +22,7 @@
                 <form action="controller/login.php" method="post">
                 <br>
                 <h2><center>Login</center></h2>
-                    <label>Usuário:</label><br>
                     <input type="email" id="email" name="email" placeholder="Usuario" required="" autocomplete="off"><br><br>
-                    <label>Senha:</label><br>
                     <input type="password" id="password" name="password" placeholder="Senha" required="" autocomplete="off"><br><br>
                     <input type="submit" id="btn" name="button" class="btn btn-primary" value="Entrar"><br><br>
                     <a href="view/cadastro.php">Cadastre-se</a>

@@ -26,6 +26,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProjetoYouTube" />
   </component>
   <component name="ServiceViewManager">
@@ -51,6 +52,7 @@
       <option name="presentableId" value="Default" />
       <updated>1577402145065</updated>
       <workItem from="1577402177420" duration="72000" />
+      <workItem from="1578185004352" duration="6000" />
     </task>
     <servers />
   </component>
@@ -62,9 +64,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1577402251520" />
-    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1577402184813">
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1578185007519">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1577402184813" />
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1578185007519" />
   </component>
 </project>
