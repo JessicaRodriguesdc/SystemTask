@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 4.9.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 08-Dez-2019 às 19:59
--- Versão do servidor: 10.1.40-MariaDB
--- versão do PHP: 7.1.29
+-- Tempo de geração: 05/01/2020 às 18:35
+-- Versão do servidor: 8.0.18
+-- Versão do PHP: 7.3.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,39 +19,38 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `crud_bd`
+-- Banco de dados: `crud_bd`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `tarefa`
+-- Estrutura para tabela `tarefa`
 --
 
 CREATE TABLE `tarefa` (
   `id` int(11) NOT NULL,
   `nomeTarefa` varchar(50) NOT NULL,
   `status` varchar(10) NOT NULL,
-  `dataInicil` date DEFAULT NULL,
+  `dataInicio` date DEFAULT NULL,
   `dataTermino` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Extraindo dados da tabela `tarefa`
+-- Despejando dados para a tabela `tarefa`
 --
 
-INSERT INTO `tarefa` (`id`, `nomeTarefa`, `status`, `dataInicil`, `dataTermino`) VALUES
-(1, 'Estudar', 'Ativo', '2019-12-08', '2020-12-08'),
-(2, 'Estudar', 'Ativo', '2019-12-08', '2019-12-08'),
-(3, 'Estudar', 'Ativo', '2019-12-08', '2019-12-08'),
-(4, 'Estudar', 'Ativo', '2019-12-08', '2019-12-08'),
-(5, 'Estudar', 'Ativo', '2019-12-08', '2019-12-08'),
-(6, 'Estudar', 'Ativo', '2019-12-08', '2019-12-08');
+INSERT INTO `tarefa` (`id`, `nomeTarefa`, `status`, `dataInicio`, `dataTermino`) VALUES
+(1, 'Estudar Java', 'Iniciado', '2019-12-08', '2020-12-31'),
+(2, 'Estudar Sql', 'Parado', '2019-12-08', '2019-12-25'),
+(3, 'Estudar', 'Finalizado', '2019-12-08', '2019-12-08'),
+(4, 'Estudar', 'Finalizado', '2019-12-08', '2019-12-08'),
+(8, 'Estudar Node.JS', 'Iniciado', '2020-01-06', '2020-01-10');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `usuario`
+-- Estrutura para tabela `usuario`
 --
 
 CREATE TABLE `usuario` (
@@ -64,43 +63,44 @@ CREATE TABLE `usuario` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Extraindo dados da tabela `usuario`
+-- Despejando dados para a tabela `usuario`
 --
 
 INSERT INTO `usuario` (`id`, `nome`, `Email`, `Cpf`, `telefone`, `senha`) VALUES
-(1, 'jessica', 'jsk@teste', '123456', '987654321', 'dada');
+(1, 'jessica', 'jsk@teste', '123456', '987654321', 'dada'),
+(2, 'iscá', 'isk@teste', '', '123456789', 'dada');
 
 --
--- Indexes for dumped tables
+-- Índices de tabelas apagadas
 --
 
 --
--- Indexes for table `tarefa`
+-- Índices de tabela `tarefa`
 --
 ALTER TABLE `tarefa`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `usuario`
+-- Índices de tabela `usuario`
 --
 ALTER TABLE `usuario`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT de tabelas apagadas
 --
 
 --
--- AUTO_INCREMENT for table `tarefa`
+-- AUTO_INCREMENT de tabela `tarefa`
 --
 ALTER TABLE `tarefa`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT for table `usuario`
+-- AUTO_INCREMENT de tabela `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

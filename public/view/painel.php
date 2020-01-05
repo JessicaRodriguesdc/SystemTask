@@ -153,7 +153,7 @@ include('../controller/listaTarefas.php');
                                     
 														</div>
 														<div class="modal-footer">
-														<input type="submit" class="btn btn-primary" value="Salvar">
+														<input type="submit" class="btn btn-success" value="Salvar">
 														</div>
 												</form>
 											</div>
